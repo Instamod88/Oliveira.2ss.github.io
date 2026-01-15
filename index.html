@@ -2,26 +2,52 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Sensibilidade FF</title>
+  <title>Sens FF Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="card">
-  <h1>Sensibilidade / Auxílio</h1>
-  <p>Configure a sensibilidade para usar</p>
+<div class="background-effects"></div>
 
-  <select id="brand">
-    <option value="">Selecione a marca</option>
-  </select>
+<div class="container">
 
-  <select id="model">
-    <option value="">Selecione o modelo</option>
-  </select>
+  <h1>🔥 GERADOR DE SENSI🔥</h1>
+  <p class="subtitle">Configuração profissional • Todos os dispositivos</p>
 
-  <button id="generate">Gerar</button>
+  <div class="selectors">
+    <select id="brand">
+      <option value="">Selecione a marca</option>
+    </select>
 
-  <div id="result"></div>
+    <select id="model">
+      <option value="">Selecione o modelo</option>
+    </select>
+  </div>
+
+  <div class="panels">
+
+    <!-- NORMAL -->
+    <div class="panel">
+      <h2>🎯 Sens Normal</h2>
+      <button onclick="gerar('normal')">Gerar Sensibilidade</button>
+      <div class="resultado" id="resultadoNormal"></div>
+    </div>
+
+    <!-- VIP -->
+    <div class="panel vip">
+      <h2>⚡ Sens VIP</h2>
+      <button onclick="gerar('vip')">Gerar Sensibilidade VIP</button>
+      <div class="resultado" id="resultadoVip"></div>
+    </div>
+
+  </div>
+
+  <div class="social">
+    <a href="https://www.instagram.com/_oliveira.2ss?igsh=MXIxaHRybzFmbDV2Nw%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@oliveira.2ss?_r=1&_t=ZS-935waTiwkzw" target="_blank">TikTok</a>
+  </div>
+
 </div>
 
 <script src="script.js"></script>
