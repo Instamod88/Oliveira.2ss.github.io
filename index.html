@@ -2,50 +2,42 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Sens FF Pro</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SENSI NIVEL XIT😈</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="background-effects"></div>
+<!-- FUNDO ANIMADO -->
+<div class="bg"></div>
 
 <div class="container">
-
-  <h1>🔥 GERADOR DE SENSI🔥</h1>
-  <p class="subtitle">Configuração profissional • Todos os dispositivos</p>
+  <h1>SENSI XITADA👹</h1>
 
   <div class="selectors">
     <select id="brand">
-      <option value="">Selecione a marca</option>
+      <option value="">Marca</option>
     </select>
 
     <select id="model">
-      <option value="">Selecione o modelo</option>
+      <option value="">Modelo</option>
     </select>
   </div>
 
-  <div class="panels">
-
-    <!-- NORMAL -->
-    <div class="panel">
-      <h2>🎯 Sens Normal</h2>
-      <button onclick="gerar('normal')">Gerar Sensibilidade</button>
-      <div class="resultado" id="resultadoNormal"></div>
-    </div>
-
-    <!-- VIP -->
-    <div class="panel vip">
-      <h2>⚡ Sens VIP</h2>
-      <button onclick="gerar('vip')">Gerar Sensibilidade VIP</button>
-      <div class="resultado" id="resultadoVip"></div>
-    </div>
-
+  <!-- ABAS -->
+  <div class="tabs">
+    <button class="active" onclick="trocarAba('normal')">NORMAL</button>
+    <button onclick="trocarAba('vip')">VIP</button>
   </div>
 
-  <div class="social">
-    <a href="https://www.instagram.com/_oliveira.2ss?igsh=MXIxaHRybzFmbDV2Nw%3D%3D&utm_source=qr" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@oliveira.2ss?_r=1&_t=ZS-935waTiwkzw" target="_blank">TikTok</a>
+  <!-- CONTEÚDOS -->
+  <div id="normal" class="content active">
+    <button class="gerar" onclick="gerar('normal')">GERAR SENS NORMAL</button>
+    <div id="resultadoNormal" class="resultado"></div>
+  </div>
+
+  <div id="vip" class="content">
+    <button class="gerar vip" onclick="gerar('vip')">GERAR SENS VIP</button>
+    <div id="resultadoVip" class="resultado"></div>
   </div>
 
 </div>
